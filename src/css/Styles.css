@@ -1,0 +1,126 @@
+
+/* ------------------------------------ Aplicamos Variables ----------------------------- */
+.boton, .botonPages2, .botonContactos, .botonPagesH, .botonPages, .botonHome {
+    background-color: whitesmoke;
+    color: whitesmoke;
+    font-weight: 700;
+  }
+  .boton:hover, .botonPages2:hover, .botonContactos:hover, .botonPagesH:hover, .botonPages:hover, .botonHome:hover {
+    background-color: orange;
+    transition: all 0.2s;
+  }
+  
+  .botonHome {
+    width: 100px;
+    padding: 5px 10px;
+    text-align: center;
+    border: solid 2px #203239;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: #203239;
+    border-radius: 5px;
+  }
+  .botonHome:hover {
+    background-color: orange;
+    color: black;
+    transition: all 0.2s;
+  }
+  
+  .botonPages {
+    width: 110px;
+    padding: 5px 10px;
+    font-weight: 100;
+    text-align: center;
+    border: solid 2px whitesmoke;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: #203239;
+    border-radius: 5px;
+  }
+  .botonPages:hover {
+    background-color: orangered;
+    color: whitesmoke;
+    transition: all 0.2s;
+  }
+  
+  .botonPagesH {
+    width: 110px;
+    padding: 5px 10px;
+    font-weight: 100;
+    text-align: center;
+    border: solid 2px whitesmoke;
+    text-decoration: none;
+    background-color: orangered;
+    color: #203239;
+    border-radius: 5px;
+  }
+  .botonPagesH:hover {
+    background-color: rgba(255, 68, 0, 0.879);
+    color: whitesmoke;
+    transition: all 0.2s;
+  }
+  
+  .botonContactos {
+    width: 110px;
+    padding: 6px 10px;
+    margin: 5px 5px;
+    font-weight: 100;
+    text-align: center;
+    border: solid 2px whitesmoke;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: #203239;
+    border-radius: 5px;
+  }
+  .botonContactos:hover {
+    background-color: orangered;
+    color: whitesmoke;
+    transition: all 0.2s;
+  }
+  
+  .botonPages2 {
+    width: 300px;
+    padding: 5px 10px;
+    font-weight: 100;
+    text-align: center;
+    border: solid 2px whitesmoke;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: #203239;
+    border-radius: 5px;
+  }
+  .botonPages2:hover {
+    background-color: orangered;
+    color: whitesmoke;
+    transition: all 0.2s;
+  }
+
+/* ------------------------------------ NavBar ----------------------------- */
+
+
+
+  .NvLn {
+    padding: 5px;
+    margin: 2px;
+    font-weight: 500;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all .2s;
+
+}
+
+.NvLn:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+
+.items {
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
