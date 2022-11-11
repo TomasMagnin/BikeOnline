@@ -13,12 +13,12 @@ export default function NavBar() {
 
   return (
         
-              <Navbar bg="light" expand="lg">
+              <Navbar bg="light" className="nav1" expand="lg">
+              <NavLink to={"/"} className="navBrand"> BikeOnline <img className="iconNav" src="../IconHeader.png" alt="logo" /></NavLink>
               <Container>
-                <Navbar.Brand> BikeOnline <Link to={"/"}></Link> <img className="iconNav" src="../IconHeader.png" alt="logo" /></Navbar.Brand>
-                <Navbar.Toggle className="sclassName" aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                  <Nav className="me-auto text-center mx-auto  ">
+                <Navbar.Toggle  aria-controls="basic-navbar-nav " />
+                <Navbar.Collapse id="basic-navbar-nav ">
+                  <Nav className=" navNav me-auto text-center mx-auto">
                     <NavLink className="NvLn" to="/">Inicio</NavLink>
                     <NavLink className="NvLn" to="/category/Mountain">Mountain Bike</NavLink>
                     <NavLink className="NvLn" to="/category/Route">Ruta</NavLink>

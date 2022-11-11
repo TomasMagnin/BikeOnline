@@ -133,7 +133,32 @@
     color: whitesmoke;
 }
 
+.iconNav {
+  width: 50px;
+}
 
+
+.navBrand {
+  
+  padding: 15px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin-right: calc(100vw - 109vw);
+
+}
+.navBrand:hover {
+  
+  color: rgba(12, 12, 12, 0.719);
+}
+
+.nav1 {
+  background-color: whitesmoke;
+  border-bottom: solid 4PX black;
+}
+
+/* ------------------------------------ Items ----------------------------- */
 .items {
   background-color: gray;
     padding: 5px;
@@ -154,6 +179,10 @@
   align-items: center;
 }
 
+
+/* ------------------------------------ Contador ----------------------------- */
+
+
 .countDetail {
   padding: 10px;
   margin: 5px;
@@ -169,6 +198,3 @@
 }
 
 
-.iconNav {
-  width: 35px;
-}
