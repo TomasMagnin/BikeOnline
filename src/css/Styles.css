@@ -134,12 +134,13 @@
 }
 
 .iconNav {
-  width: 50px;
+  width: 40px;
 }
 
 
 .navBrand {
-  
+  display: flex;
+  flex-direction: row;
   padding: 15px;
   font-size: 1.5rem;
   text-decoration: none;
@@ -155,7 +156,11 @@
 
 .nav1 {
   background-color: whitesmoke;
-  border-bottom: solid 4PX black;
+  border-bottom: solid 2PX black;
+}
+
+.navbar-toggler {
+  margin-top: 88px;
 }
 
 /* ------------------------------------ Items ----------------------------- */
