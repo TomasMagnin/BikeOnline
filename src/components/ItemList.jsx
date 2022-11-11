@@ -13,7 +13,7 @@ export default function ItemList({ productos }) {
     <div className="items">
       {!productos.length && "Loading..."}
       {productos.map((item) => (
-        <Item item={item} />
+        <Item item={item} key={item.id} />
       ))}
     </div>
   );

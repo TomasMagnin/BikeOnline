@@ -17,12 +17,11 @@ export default function ItemCount({ ini, max, addItem }) {
   }
 
   return (
-    <div>
-      <button onClick={restar}>-</button>
-      {count}
-      <button onClick={sumar}>+</button>
-      <br />
-      <button onClick={() => addItem(count)}>AGREGAR</button>
+    <div className="countDetail">
+      <button className="botonDetail" onClick={restar}>-</button>
+      <span className="numberDetail">{count}</span>
+      <button className="botonDetail" onClick={sumar}>+</button>
+      <button className="botonDetail botonDetailx" onClick={() => addItem(count)}>AGREGAR</button>
     </div>
   );
 }

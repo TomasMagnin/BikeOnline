@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { Link } from "react-router-dom";
 import "../css/Styles.css";
 import ItemCount from "./ItemCount";
 
@@ -9,28 +8,27 @@ import ItemCount from "./ItemCount";
 
 
 export default function ItemDetail({ producto }) {
-  
-console.log(producto.img);
 
   function addItem(x) {
 
-    alert("quiere agregar " + x + " de este item: " + producto.brand.model);
+    alert("Agregar " + x + " " + producto.brand + " " + producto.model + " " + "al Carro" );
   }
 
   return (
-    <div className="items">
+    <div className="items2">
       {producto.id ? (
         <>
-        <Card cstyle={{ width: '26rem' }}>
+        
+      <Card className="mx-auto" style={{ width: '32rem'}}>
         <Card.Img variant="top" src={producto.img} />
               <Card.Body>
-                <Card.Title>Marca:{producto.brand}</Card.Title>
-                <Card.Text>Modelo:{producto.model}</Card.Text>
-                <Card.Text>${producto.price}</Card.Text>
-                <Card.Text>Unidades en stock: {producto.stock}</Card.Text>
-          <ItemCount ini={1} max={producto.stock} addItem={addItem} />
-          </Card.Body>
-        </Card> 
+                <Card.Title className="text-center">Marca:{producto.brand}</Card.Title>
+                <Card.Text className="text-center">Modelo:{producto.model}</Card.Text>
+                <Card.Text className="text-center">${producto.price}</Card.Text>
+                <Card.Text className="text-center">Unidades en stock: {producto.stock}</Card.Text>
+              <ItemCount ini={1} max={producto.stock} addItem={addItem} />
+              </Card.Body>
+      </Card> 
         </>
       ) : (
         <>Loading...</>

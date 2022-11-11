@@ -95,6 +95,24 @@
     transition: all 0.2s;
   }
 
+  .botonDetail {
+    width: 100px;
+    padding: 5px 10px;
+    font-weight: 100;
+    text-align: center;
+    border: solid 2px whitesmoke;
+    text-decoration: none;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 5px;
+  }
+  .botonDetail:hover {
+    background-color: orangered;
+    color: whitesmoke;
+    transition: all 0.2s;
+  }
+  
+
 /* ------------------------------------ NavBar ----------------------------- */
 
 
@@ -117,10 +135,40 @@
 
 
 .items {
+  background-color: gray;
     padding: 5px;
     margin: 5px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+}
+
+
+.items2 {
+  background-color: gray;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countDetail {
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.numberDetail {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
+.iconNav {
+  width: 35px;
 }
