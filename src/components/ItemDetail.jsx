@@ -2,6 +2,8 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import "../css/Styles.css";
 import ItemCount from "./ItemCount";
+import {useCartContext} from "./CartContext"
+import { useState } from "react";
 
 
 
@@ -9,9 +11,19 @@ import ItemCount from "./ItemCount";
 
 export default function ItemDetail({ producto }) {
 
-  function addItem(x) {
+  const [goToCart, setGoToCart] = useState(false);
 
-    alert("Agregar " + x + " " + producto.brand + " " + producto.model + " " + "al Carro" );
+  const {addCart} = useCartContext();
+
+
+
+
+
+
+
+  function addItem(quantity) {
+      setGoToCart(true);
+      addCart(producto, quantity)    // producto es el objeto del producto, quantity es la cantidad que eligio el usuarui para el carrito
   }
 
   return (

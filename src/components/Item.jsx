@@ -2,12 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 import "../css/Styles.css";
+import {useContext} from "react";  // Imporamos el Hook useContext
+import { CartContext } from "./CartContext";     // Importamos el Contexto que queremos usar, en este caso CartContext.
+
 
 
 
  /* Aca renderizamos cada imtem (articulo) */
 
 export default function Item({ item }) {
+
 
   return (
    
