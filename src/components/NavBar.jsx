@@ -23,12 +23,11 @@ export default function NavBar() {
                     <NavLink className="NvLn" to="/category/Mountain">Mountain Bike</NavLink>
                     <NavLink className="NvLn" to="/category/Route">Ruta</NavLink>
                     <NavLink className="NvLn" to="/category/Electric">Electricas</NavLink>
-                    <NavLink className="NvLn" to="cart">{CartWidget}</NavLink>
                   </Nav>
                 </Navbar.Collapse>
+                
               </Container>
-              
-              {/* <CartWidget/> */}
+             <Link to="cart"><CartWidget/></Link> 
             </Navbar>    
 
   );

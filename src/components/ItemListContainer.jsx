@@ -2,7 +2,6 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import { NavLink ,Link, useParams } from "react-router-dom";
 import "./ItemListContainer";
-import { producsBK } from "./data.js";
 import ItemList from "./ItemList";
 import { getFirestore, collection ,getDocs, query, where } from "firebase/firestore";                           //Primero traemos la Funcion GetDirestore, depues traemos el puntero doc (que tiene el contenido de cada item), para traer un solo dato, y getDoc es la promesa que nos trae el dato. El collection es un conjunto de doc.
 

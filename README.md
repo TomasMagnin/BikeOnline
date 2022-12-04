@@ -1,4 +1,62 @@
-# Getting Started with Create React App
+
+# Proyecto REACT - BikeOnline 
+
+Link: https://bike-online.vercel.app/
+
+El proyecto basado en un E-Commerce, es una tienda de bicicleta, donde se aplican las funcionalidades de React.
+
+## Features
+
+- Navbar con secciones de productos.
+- Cart Widget contador de productos.
+- Shop cart.
+- App responsive.
+- Item Detail.
+- Item Quantity Selector con actualización de stock.
+- Firebase, uso de query.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +125,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
