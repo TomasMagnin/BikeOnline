@@ -19,10 +19,10 @@ export default function NavBar() {
                 <Navbar.Toggle  aria-controls="basic-navbar-nav " />
                 <Navbar.Collapse id="basic-navbar-nav ">
                   <Nav className=" navNav me-auto text-center mx-auto">
-                    <NavLink className="NvLn" to="/">Inicio</NavLink>
+                    <NavLink className="NvLn" to="/">Home</NavLink>
                     <NavLink className="NvLn" to="/category/Mountain">Mountain Bike</NavLink>
-                    <NavLink className="NvLn" to="/category/Route">Ruta</NavLink>
-                    <NavLink className="NvLn" to="/category/Electric">Electricas</NavLink>
+                    <NavLink className="NvLn" to="/category/Route">Route</NavLink>
+                    <NavLink className="NvLn" to="/category/Electric">Electric</NavLink>
                   </Nav>
                 </Navbar.Collapse>
                 

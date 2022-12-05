@@ -5,7 +5,7 @@ import ItemCart from './ItemCart';
 
 export default function Cart() {
 
-    const {cart, totalPrice} = useCartContext();  // traemos el carrito y el precio total que es lo que mostramos en el Cart.
+    const {cart, totalPrice, clearCart} = useCartContext();  // traemos el carrito y el precio total que es lo que mostramos en el Cart.
 
     if (cart.length === 0) {
         return (
@@ -17,13 +17,14 @@ export default function Cart() {
      );
     }
 
-
   return (
    <>
     {
     cart.map(product => <ItemCart key={product.id} product={product}/>) 
     }
-    <p>Total: {totalPrice()}</p>
+    
+    <button className= "botonDetail text-center" onClick={clearCart}>Clear Cart</button>
+    <p className=' itemsCart'>Total: {totalPrice()}</p>
     </>  
 
 

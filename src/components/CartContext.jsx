@@ -13,7 +13,7 @@ export default function CartProvider({children}) {
 
     // Aca colocamos toda la Logica.
 
-    const [cart, setCart] = useState([]);                          // Creamos el estado para el Carrito.
+    const [cart, setCart] = useState(  JSON.parse(localStorage.getItem("cart")) || []);    // Creamos el estado para el Carrito. ademas, nos trae lo que tenemos en el local starge guardado del carrito, sino lo carga vacio
 
     const clearCart = () => setCart([]);                           // Seteamos un array vacio para limpiar el carrito.
 
@@ -44,6 +44,13 @@ export default function CartProvider({children}) {
     }
 
     const totalProducts = () => cart.reduce((acum, productNow) => acum + productNow.quantity, 0)    // Iniciamos un acumulador en 0, y sumamos la cantidad de productos seleccionados al cumulador y asi por cada seleccion de item
+
+
+    useEffect(() => {
+        localStorage.setItem("cart", JSON.stringify(cart))
+
+    }, [cart])                 // Cualquier cabio en el carro ejecutamos este use efect y guardamos los cambios en el localStorage
+    
 
 
     console.log("carrito", cart);
