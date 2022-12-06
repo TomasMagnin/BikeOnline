@@ -4,6 +4,7 @@ import "../css/Styles.css";
 import ItemCount from "./ItemCount";
 import {useCartContext} from "./CartContext"
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -34,11 +35,13 @@ export default function ItemDetail({ producto }) {
       <Card className="mx-auto" style={{ width: '32rem'}}>
         <Card.Img variant="top" src={producto.img} />
               <Card.Body>
-                <Card.Title className="text-center">Marca:{producto.brand}</Card.Title>
-                <Card.Text className="text-center">Modelo:{producto.model}</Card.Text>
-                <Card.Text className="text-center">${producto.price}</Card.Text>
+                <Card.Title className="text-center">Marca: {producto.brand}</Card.Title>
+                <Card.Text className="text-center">Modelo: {producto.model}</Card.Text>
+                <Card.Text className="text-center">u$s {producto.price * 1000}</Card.Text>
                 <Card.Text className="text-center">Unidades en stock: {producto.stock}</Card.Text>
               <ItemCount ini={1} max={producto.stock} addItem={addItem} />
+              <Card.Text className='text-center'><Link className= "botonDetail"  to="/cart"> Finalizar Compra </Link></Card.Text>
+              
               </Card.Body>
       </Card> 
         </>

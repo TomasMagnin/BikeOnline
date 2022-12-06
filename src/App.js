@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React from 'react';
 import CartProvider from './components/CartContext';
 import Cart from './components/Cart';
+import Checkout from './components/Checkout';
 
 
 export default function App() {
@@ -21,7 +22,9 @@ export default function App() {
             <Route path="/" element={<ItemListContainer />} />
             <Route path="/category/:idcategory" element={<ItemListContainer />} />
             <Route path="/item/:iditem" element={<ItemDetailContainer />} />          {/* En la ruta IMEM siemore tengo un ID de item, cuando entramos a esta ruta siempre va ver los parametros de la variable y las saca usando el HOOK en itemdetailcontaider */}
+            <Route path="/checkout" element={<Checkout />}/>  
             <Route path="/cart" element={<Cart/>} />
+           
         </Routes>
         </CartProvider>
         <Footer />

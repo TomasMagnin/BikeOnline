@@ -96,6 +96,7 @@
   }
 
   .botonDetail {
+    
     width: 100px;
     padding: 5px 10px;
     font-weight: 100;
@@ -120,7 +121,7 @@
   .NvLn {
     padding: 5px;
     margin: 2px;
-    font-weight: 500;
+    font-weight: 700;
     color: black;
     border-radius: 5px;
     text-decoration: none;
@@ -198,6 +199,7 @@
 
 
 .countDetail {
+  display: flex;
   padding: 10px;
   margin: 5px;
   display: flex;
@@ -206,25 +208,24 @@
 }
 
 
+
 .numberDetail {
+  margin: 5px;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-
+.detailH {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+}
 /* ------------------------------------ ItemCart ----------------------------- */
 
 .itemsCart {
-  background-color: black;
-  color: whitesmoke;
-  font-size: 1.5rem;
-  font-weight: 400;
-  border-radius: 10px;
-  padding: 5px;
-  margin: 5px;
-  display: flex;
+  display: inline-block;
   justify-content: center;
-  align-items: center;
 }
 
 .cartnav {
@@ -233,4 +234,17 @@
 .cartnav:hover {
   border: solid white 3px;
   border-radius: 5px;
+}
+
+.CartParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.conCart1 {
+  padding: 10px;
+  margin: 5px;
 }

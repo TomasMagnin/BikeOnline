@@ -32,7 +32,7 @@ export default function ItemListContainer({greeting}) {
 
   return (
     <div className="text-center"  style={{backgraundColor: "whitesmoke"}}>{greeting}
-      <ItemList productos={productos} />;
+      <ItemList productos={productos} />
     </div>
   )
 }

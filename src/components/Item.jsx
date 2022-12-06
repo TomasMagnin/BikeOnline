@@ -20,11 +20,10 @@ export default function Item({ item }) {
             <Card style={{ width: '18rem' }}>
               <Card.Img variant="top" src={item.img} />
               <Card.Body>
-                <Card.Title>Marca:{item.brand}</Card.Title>
-                <Card.Text>Modelo:{item.model}</Card.Text>
-                <Card.Text>Stock: {item.stock}</Card.Text>
-                <Card.Text>${item.price}</Card.Text>
-                <Link className="botonPagesH"  to={`/item/${item.id}`}>Ver Mas</Link>
+                <Card.Title>Marca: {item.brand}</Card.Title>
+                <Card.Text>Modelo: {item.model}</Card.Text>
+                <Card.Text>u$s {item.price * 1000}</Card.Text>
+                <Link className="botonPagesH"  to={`/item/${item.id}`}> Ver Mas </Link>
               </Card.Body>
             </Card>
       </div>

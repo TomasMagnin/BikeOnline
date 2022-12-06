@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 export default function ItemCount({ ini, max, addItem }) {
 
     
@@ -18,10 +19,10 @@ export default function ItemCount({ ini, max, addItem }) {
 
   return (
     <div className="countDetail">
-      <button className="botonDetail" onClick={restar}>-</button>
-      <span className="numberDetail">{count}</span>
-      <button className="botonDetail" onClick={sumar}>+</button>
-      <button className="botonDetail botonDetailx" onClick={() => addItem(count)}>AGREGAR</button>
+      <button className="botonDetail" onClick= {restar}> - </button>
+      <span className="numberDetail"> {count} </span>
+      <button className="botonDetail" onClick= {sumar}> + </button>
+      <div className="countDetail1"> <button className="botonDetail " onClick={() => addItem(count)}> AGREGAR </button> </div>
     </div>
   );
 }

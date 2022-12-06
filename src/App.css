@@ -1,3 +1,16 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* ------------------------------------ App ----------------------------------------------------------------------- */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* ------------------------------------ Header ----------------------------------------------------------------------- */
 /*------------------------------------------- Titulo, Imagen ----------------------------------------------------------*/
 header {
@@ -101,6 +114,9 @@ header h1 {
 /* ------------------------------------------------------ */
 
 .footer {
+  position: relative;
+  margin-top: auto;
+  margin-top: auto;
   background-color: #203239;
   border-top: solid 2px orange;
   color: whitesmoke;
@@ -109,6 +125,7 @@ header h1 {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  
 }
 .footer__titulo {
   width: 100%;

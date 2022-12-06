@@ -10,23 +10,33 @@ export default function Cart() {
     if (cart.length === 0) {
         return (
                 
-                <div>
-                    <p>No hay elementos en el carrito</p>
-                    <Link to="/"> Hacer Compras</Link>
+                <div className='detailH'>
+                    <h2 className='text-center'>No hay elementos en el carrito</h2>
+                    <button className='text-center '><Link to="/" className='botonDetail'> Hacer Compras</Link></button>
                 </div>
      );
     }
 
   return (
-   <>
+   <div className='CartParent'>
     {
     cart.map(product => <ItemCart key={product.id} product={product}/>) 
     }
-    
-    <button className= "botonDetail text-center" onClick={clearCart}>Clear Cart</button>
-    <p className=' itemsCart'>Total: {totalPrice()}</p>
-    </>  
-
-
+    <div className='conCart1'>
+         <Link 
+            className= "botonDetail" 
+            to="/">
+            Seguir comprando
+        </Link>
+        <Link
+            className= "botonDetail"
+            to="/checkout"
+            >
+            Finalizar Compra
+        </Link>
+    </div>
+    <button className= "botonDetail text-center" onClick={clearCart}>Limpiar Carrito</button>
+    <p className=' itemsCart'>Total a : {totalPrice() * 1000}</p>
+    </div>
   )
 }

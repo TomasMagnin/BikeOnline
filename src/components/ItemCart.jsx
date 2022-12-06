@@ -8,6 +8,7 @@ export default function ItemCart({ product }) {
 
      const {removeCart}  =  useCartContext();           // Llamamos la funcion de remover el carrito, usando el Hook Context.
 
+
   return (
     <div>
         <Card className="mx-auto" style={{ width: '32rem'}}>
@@ -15,10 +16,12 @@ export default function ItemCart({ product }) {
               <Card.Body>
                 <Card.Title className="text-center">Marca:{product.brand}</Card.Title>
                 <Card.Text className="text-center">Modelo:{product.model}</Card.Text>
-                <Card.Text className="text-center">${product.price}</Card.Text>
-                <Card.Text className="text-center">Unidades en stock: {product.stock}</Card.Text>
-                <button className="botonDetail text-center" onClick={() => removeCart(product.id)}>Delete</button>
-                <button className="botonDetail text-center" /* onClick={() => Checkout(product.id)} */>Checkout</button>
+                <Card.Text className="text-center">Unidades en Stock: {product.stock - product.quantity}</Card.Text>
+                <Card.Text className="text-center">Cantidad Selecionada: {product.quantity}</Card.Text>
+                <Card.Text className="text-center">Precio Unitario ${product.price * 1000}</Card.Text>
+                <Card.Text className="text-center">Subtotal ${(product.price * product.quantity) * 1000 }</Card.Text>
+                <Card.Text className='text-center'><button className="botonDetail itemsCart" onClick={() => removeCart(product.id)}> Eliminar Producto </button></Card.Text>
+                
               </Card.Body>
       </Card> 
 
