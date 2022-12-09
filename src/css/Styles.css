@@ -1,123 +1,291 @@
-
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 /* ------------------------------------ Aplicamos Variables ----------------------------- */
 .boton, .botonPages2, .botonContactos, .botonPagesH, .botonPages, .botonHome {
-    background-color: whitesmoke;
-    color: whitesmoke;
-    font-weight: 700;
-  }
-  .boton:hover, .botonPages2:hover, .botonContactos:hover, .botonPagesH:hover, .botonPages:hover, .botonHome:hover {
-    background-color: orange;
-    transition: all 0.2s;
-  }
-  
-  .botonHome {
-    width: 100px;
-    padding: 5px 10px;
-    text-align: center;
-    border: solid 2px #203239;
-    text-decoration: none;
-    background-color: whitesmoke;
-    color: #203239;
-    border-radius: 5px;
-  }
-  .botonHome:hover {
-    background-color: orange;
-    color: black;
-    transition: all 0.2s;
-  }
-  
-  .botonPages {
-    width: 110px;
-    padding: 5px 10px;
-    font-weight: 100;
-    text-align: center;
-    border: solid 2px whitesmoke;
-    text-decoration: none;
-    background-color: whitesmoke;
-    color: #203239;
-    border-radius: 5px;
-  }
-  .botonPages:hover {
-    background-color: orangered;
-    color: whitesmoke;
-    transition: all 0.2s;
-  }
-  
-  .botonPagesH {
-    width: 110px;
-    padding: 5px 10px;
-    font-weight: 100;
-    text-align: center;
-    border: solid 2px whitesmoke;
-    text-decoration: none;
-    background-color: orangered;
-    color: #203239;
-    border-radius: 5px;
-  }
-  .botonPagesH:hover {
-    background-color: rgba(255, 68, 0, 0.879);
-    color: whitesmoke;
-    transition: all 0.2s;
-  }
-  
-  .botonContactos {
-    width: 110px;
-    padding: 6px 10px;
-    margin: 5px 5px;
-    font-weight: 100;
-    text-align: center;
-    border: solid 2px whitesmoke;
-    text-decoration: none;
-    background-color: whitesmoke;
-    color: #203239;
-    border-radius: 5px;
-  }
-  .botonContactos:hover {
-    background-color: orangered;
-    color: whitesmoke;
-    transition: all 0.2s;
-  }
-  
-  .botonPages2 {
-    width: 300px;
-    padding: 5px 10px;
-    font-weight: 100;
-    text-align: center;
-    border: solid 2px whitesmoke;
-    text-decoration: none;
-    background-color: whitesmoke;
-    color: #203239;
-    border-radius: 5px;
-  }
-  .botonPages2:hover {
-    background-color: orangered;
-    color: whitesmoke;
-    transition: all 0.2s;
-  }
+  background-color: whitesmoke;
+  color: whitesmoke;
+  font-weight: 700;
+}
+.boton:hover, .botonPages2:hover, .botonContactos:hover, .botonPagesH:hover, .botonPages:hover, .botonHome:hover {
+  background-color: orange;
+  transition: all 0.2s;
+}
 
-  .botonDetail {
-    
-    width: 100px;
-    padding: 5px 10px;
-    font-weight: 100;
-    text-align: center;
-    border: solid 2px whitesmoke;
-    text-decoration: none;
-    background-color: black;
-    color: whitesmoke;
-    border-radius: 5px;
-  }
-  .botonDetail:hover {
-    background-color: orangered;
-    color: whitesmoke;
-    transition: all 0.2s;
-  }
+.botonHome {
+  width: 100px;
+  padding: 5px 10px;
+  text-align: center;
+  border: solid 2px #203239;
+  text-decoration: none;
+  background-color: whitesmoke;
+  color: #203239;
+  border-radius: 5px;
+}
+.botonHome:hover {
+  background-color: orange;
+  color: black;
+  transition: all 0.2s;
+}
+
+.botonPages {
+  width: 110px;
+  padding: 5px 10px;
+  font-weight: 100;
+  text-align: center;
+  border: solid 2px whitesmoke;
+  text-decoration: none;
+  background-color: whitesmoke;
+  color: #203239;
+  border-radius: 5px;
+}
+.botonPages:hover {
+  background-color: orangered;
+  color: whitesmoke;
+  transition: all 0.2s;
+}
+
+.botonPagesH {
+  width: 110px;
+  padding: 5px 10px;
+  font-weight: 100;
+  text-align: center;
+  border: solid 2px whitesmoke;
+  text-decoration: none;
+  background-color: orangered;
+  color: #203239;
+  border-radius: 5px;
+}
+.botonPagesH:hover {
+  background-color: rgba(255, 68, 0, 0.879);
+  color: whitesmoke;
+  transition: all 0.2s;
+}
+
+.botonContactos {
+  width: 110px;
+  padding: 6px 10px;
+  margin: 5px 5px;
+  font-weight: 100;
+  text-align: center;
+  border: solid 2px whitesmoke;
+  text-decoration: none;
+  background-color: whitesmoke;
+  color: #203239;
+  border-radius: 5px;
+}
+.botonContactos:hover {
+  background-color: orangered;
+  color: whitesmoke;
+  transition: all 0.2s;
+}
+
+.botonPages2 {
+  width: 300px;
+  padding: 5px 10px;
+  font-weight: 100;
+  text-align: center;
+  border: solid 2px whitesmoke;
+  text-decoration: none;
+  background-color: whitesmoke;
+  color: #203239;
+  border-radius: 5px;
+}
+.botonPages2:hover {
+  background-color: orangered;
+  color: whitesmoke;
+  transition: all 0.2s;
+}
+
+.botonDetail {
   
+  width: 100px;
+  padding: 5px 10px;
+  font-weight: 100;
+  text-align: center;
+  border: solid 2px whitesmoke;
+  text-decoration: none;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+.botonDetail:hover {
+  background-color: orangered;
+  color: whitesmoke;
+  transition: all 0.2s;
+}
+
+/* ------------------------------------ App ----------------------------------------------------------------------- */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ------------------------------------ Header ----------------------------------------------------------------------- */
+/*------------------------------------------- Titulo, Imagen ----------------------------------------------------------*/
+header {
+  background: whitesmoke;
+  color: #203239;
+}
+header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0rem;
+  margin-left: 5px;
+}
+
+.button-responsive {
+  display: none;
+}
+
+/*------------------------------------------- Titulo, Imagen ----------------------------------------------------------*/
+/* -------------------------------------------- Buscador y Cart--------------------------------------------------------------*/
+.buscador {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.buscador-1 {
+  width: 55vw;
+  height: 40px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  border: black 3px solid;
+  margin-left: 240px;
+  text-align: center;
+}
+.buscador-2 {
+  width: 50px;
+  height: 40px;
+  padding: 2px;
+  margin-bottom: 4px;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  border: black 3px solid;
+  border-radius: 5px;
+}
+.buscador-2 :hover {
+  background-color: orange;
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+.buscador-img img {
+  border-radius: 10px;
+  width: 40px;
+  margin: 0px 4px 4px 4px;
+}
+
+.myCart {
+  padding-top: 2px;
+  margin-top: 30px;
+  margin-left: 5px;
+}
+.myCart_img {
+  color: black;
+  width: 40px;
+}
+.myCart_number {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: black;
+}
+
+.productInCart {
+  border-left: 5px solid orangered;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.productInCart_delete {
+  color: red;
+  background-color: whitesmoke;
+  border: solid 1px transparent;
+  padding-bottom: 25px;
+}
+.productInCart_delete :hover {
+  transform: scale(1.05);
+}
+
+.modalCarrit {
+  background-color: whitesmoke;
+  color: #203239;
+}
+/* ----------------------------------------------------- */
+
+.cardInd {
+  margin: 5px 10;
+  padding: 8px 10px;
+  margin-bottom: 450px;
+  flex-wrap: wrap;
+}
+
+/* ---------------------Footer--------------------------------- */
+
+.footer {
+  position: relative;
+  margin-top: auto;
+  margin-top: auto;
+  background-color: #203239;
+  border-top: solid 2px orange;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.footer__titulo {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+}
+.footer__sec-1 h3 {
+  text-align: center;
+}
+.footer__sec-1__div ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer__sec-1__div ul li {
+  margin-right: 30px;
+  padding: 10px;
+}
+.footer__sec-2 {
+  text-align: center;
+  align-self: flex-start;
+}
+.footer__sec-3 li {
+  padding: 3px;
+}
+.footer__sec-3 li a:hover {
+  color: orange;
+}
+.footer__pie {
+  border: solid 2px whitesmoke;
+  width: 100%;
+  text-align: center;
+}
+.footer__pie p {
+  padding-top: 10px;
+}
+.footer ul {
+  list-style: none;
+}
+.footer li {
+  text-decoration: none;
+}
+.footer a {
+  color: whitesmoke;
+  text-decoration: none;
+}
 
 /* ------------------------------------ NavBar ----------------------------- */
-
-
-
   .NvLn {
     padding: 5px;
     margin: 2px;
@@ -126,22 +294,14 @@
     border-radius: 5px;
     text-decoration: none;
     transition: all .2s;
-
 }
-
 .NvLn:hover {
     background-color: black;
     color: whitesmoke;
 }
-
-
-
 .iconNav {
   width: 40px;
-
 }
-
-
 .navBrand {
   display: flex;
   flex-direction: row;
@@ -151,28 +311,23 @@
   color: black;
   font-weight: 500;
   margin-right: calc(100vw - 109vw);
-
 }
 .navBrand:hover {
   
   color: rgba(12, 12, 12, 0.719);
 }
-
 .nav1 {
   background-color: whitesmoke;
   border-bottom: solid 2PX black;
 }
-
 .navbar-toggler {
   margin-top: 88px;
 }
-
 .nav1 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
-
 /* ------------------------------------ Items ----------------------------- */
 .items {
   background-color: gray;
@@ -183,8 +338,6 @@
     flex-direction: row;
     justify-content: space-between;
 }
-
-
 .items2 {
   background-color: gray;
   padding: 5px;
@@ -193,11 +346,7 @@
   justify-content: center;
   align-items: center;
 }
-
-
 /* ------------------------------------ Contador ----------------------------- */
-
-
 .countDetail {
   display: flex;
   padding: 10px;
@@ -206,15 +355,11 @@
   justify-content: center;
   align-items: center;
 }
-
-
-
 .numberDetail {
   margin: 5px;
   font-size: 1.2rem;
   font-weight: 600;
 }
-
 .detailH {
   display: flex;
   flex-direction: column;
@@ -222,12 +367,10 @@
   padding: 5px;
 }
 /* ------------------------------------ ItemCart ----------------------------- */
-
 .itemsCart {
   display: inline-block;
   justify-content: center;
 }
-
 .cartnav {
   color: black;
 }
@@ -242,9 +385,176 @@
   justify-content: center;
   align-items: center;
 }
-
-
 .conCart1 {
   padding: 10px;
   margin: 5px;
+}
+/* ----------------------------------------------- Formulario de Contactos ------------------------------------------- */
+.contactosForm {
+  background-color: #203239;
+ 
+  padding: 10px;
+  color: whitesmoke;
+  border-top: #203239 4px solid;
+}
+.formx2 {
+  color: #203239;
+}
+.titilox2 {
+  font-size: 2rem;
+  color: whitesmoke;
+  padding: auto;
+  margin: 15px;
+  padding: 5px;
+  text-align: center;
+}
+
+.titulo-formulario {
+  font-size: 2rem;
+  color: orange;
+  padding: auto;
+  margin: 15px;
+  padding: 5px;
+  text-align: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0px 15px 0px;
+  flex-wrap: wrap;
+}
+.formulario_input {
+  padding: 5px;
+  margin: 15px 0px 15px 0px;
+  width: 75vw;
+  max-width: 597px;
+  border: 5px solid whitesmoke;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.formulario_input_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.formulario_input > input {
+  max-width: 577px;
+  border-radius: 8px;
+  padding: 5px;
+  text-align: center;
+}
+.formulario_input > input:hover {
+  background-color: blueviolet;
+  color: whitesmoke;
+}
+.formulario_input > select {
+  border-radius: 8px;
+  text-align: center;
+}
+.formulario_input > label {
+  text-align: center;
+  margin-bottom: 3px;
+}
+.formulario_input > p {
+  text-align: center;
+}
+.formulario_input :active {
+  background-color: blueviolet;
+  color: whitesmoke;
+}
+@media screen and (max-width: 444px) {
+  .secform {
+    padding-top: 151px;
+  }
+  .contact_div h3 {
+    font-size: 1rem;
+    font-weight: 900;
+  }
+  .contact_map_div {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+  }
+  .formulario_input {
+    min-width: 252px;
+    width: 75vw;
+  }
+  .formulario_input_buttons {
+    max-width: 180px;
+  }
+  .formulario_input > input {
+    min-width: 232px;
+  }
+  .footer__titulo {
+    width: 100%;
+  }
+  .footer__sec-1 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .footer__sec-2 {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .footer__sec-3 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .footer__sec-3 ul {
+    text-align: start;
+    padding-left: 40%;
+  }
+  .footer__pie {
+    width: 100%;
+  }
+  .footer p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 444px) and (max-width: 768px) {
+  /* ------------------------------------ Contactos ----------------------------------------------------------------------- */
+  .secform {
+    padding-top: 151px;
+  }
+  .formulario_input {
+    min-width: 334px;
+    width: 75vw;
+  }
+  .formulario_input > input {
+    min-width: 314px;
+  }
+  .footer__sec-1 {
+    width: 25%;
+    align-self: flex-start;
+  }
+  .footer__sec-1 ul {
+    flex-direction: column;
+  }
+  .footer__sec-2 {
+    width: 40%;
+    text-align: center;
+  }
+  .footer__sec-3 {
+    width: 25%;
+    align-self: flex-start;
+    text-align: start;
+  }
+  .footer__sec-3 h3 {
+    text-align: start;
+    padding-left: 10%;
+  }
+  .footer .footer__pie {
+    font-size: 1rem;
+  }
+  .footer h3 {
+    font-size: 1.2rem;
+  }
 }

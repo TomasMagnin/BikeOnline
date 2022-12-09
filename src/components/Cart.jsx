@@ -12,7 +12,7 @@ export default function Cart() {
                 
                 <div className='detailH'>
                     <h2 className='text-center'>No hay elementos en el carrito</h2>
-                    <button className='text-center '><Link to="/" className='botonDetail'> Hacer Compras</Link></button>
+                    <button className='text-center'><Link to="/" className='botonDetail'> Hacer Compras</Link></button>
                 </div>
      );
     }
