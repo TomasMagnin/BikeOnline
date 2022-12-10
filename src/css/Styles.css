@@ -370,6 +370,7 @@ header h1 {
 .itemsCart {
   display: inline-block;
   justify-content: center;
+  width: 40%;
 }
 .cartnav {
   color: black;
@@ -389,10 +390,17 @@ header h1 {
   padding: 10px;
   margin: 5px;
 }
+.totalCart {
+  background-color: black;
+  color: whitesmoke;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 10px;
+}
+
 /* ----------------------------------------------- Formulario de Contactos ------------------------------------------- */
 .contactosForm {
   background-color: #203239;
- 
   padding: 10px;
   color: whitesmoke;
   border-top: #203239 4px solid;
@@ -450,8 +458,9 @@ header h1 {
   text-align: center;
 }
 .formulario_input > input:hover {
-  background-color: blueviolet;
+  background-color: orangered;
   color: whitesmoke;
+  
 }
 .formulario_input > select {
   border-radius: 8px;
@@ -465,7 +474,7 @@ header h1 {
   text-align: center;
 }
 .formulario_input :active {
-  background-color: blueviolet;
+  background-color: orangered;
   color: whitesmoke;
 }
 @media screen and (max-width: 444px) {

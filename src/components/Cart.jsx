@@ -36,7 +36,7 @@ export default function Cart() {
         </Link>
     </div>
     <button className= "botonDetail text-center" onClick={clearCart}>Limpiar Carrito</button>
-    <p className=' itemsCart'>Total a : {totalPrice() * 1000}</p>
+    <p className=' totalCart text-center'>Total a : {totalPrice() * 1000}</p>
     </div>
   )
 }
