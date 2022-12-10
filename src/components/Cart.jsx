@@ -35,7 +35,7 @@ export default function Cart() {
             Finalizar Compra
         </Link>
     </div>
-    <button className= "botonDetail text-center" onClick={clearCart}>Limpiar Carrito</button>
+    <button className= "botonDetail2 text-center" onClick={clearCart}>Limpiar Carrito</button>
     <p className=' totalCart text-center'>Total a : {totalPrice() * 1000}</p>
     </div>
   )

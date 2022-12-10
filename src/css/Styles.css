@@ -117,6 +117,22 @@
   transition: all 0.2s;
 }
 
+.botonDetail2 {
+  width: 200px;
+  padding: 5px 10px;
+  font-weight: 100;
+  text-align: center;
+  border: solid 2px whitesmoke;
+  text-decoration: none;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+.botonDetail2:hover {
+  background-color: orangered;
+  color: whitesmoke;
+  transition: all 0.2s;
+}
 /* ------------------------------------ App ----------------------------------------------------------------------- */
 .App {
   display: flex;
@@ -226,7 +242,6 @@ header h1 {
 
 .footer {
   position: relative;
-  margin-top: auto;
   margin-top: auto;
   background-color: #203239;
   border-top: solid 2px orange;
