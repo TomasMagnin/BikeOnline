@@ -19,7 +19,12 @@ const [tel, setTel]  = useState("");
 const [email, setEmail]  = useState("");
 
 function handleClickBuyButton() {
-    alert("Quiere Comprar" + JSON.stringify(cart) + "Total a Pagar: " + totalPrice() * 1000);
+    alert(name + " " + lastName + " " + tel + " " + email + " " + "Quiere Comprar" + JSON.stringify(cart) + " Total a Pagar: " + totalPrice() * 1000);
+    const buyer = {
+        buyer: {Nombre: name, Apellido: lastName, Celular: tel, Email: email},
+        carrito: cart,
+        total: totalPrice(),
+    };
 }
 
 
@@ -30,6 +35,7 @@ function handleClickBuyButton() {
     
   return (
     <div className='contactosForm'>
+        <h2 className='text-center'>Detalle de Compra</h2>
         <div> {cart.map((item) =>  (
             <Card className="mx-auto formx2" style={{ width: '28rem'}}>
                   <Card.Body>
@@ -39,17 +45,16 @@ function handleClickBuyButton() {
                     <Card.Text className="text-center">Precio Unitario u$s {item.price * 1000}</Card.Text>
                   </Card.Body>
           </Card> 
-          
         ))} </div>      {/* Armamos un string con todo lo que tiene adentro la varible cart y lo metemos en el div*/}
         <div className='text-center'>
-            <h1 className='titilox2'> Total a Pagar : {totalPrice() * 1000}</h1>
-            <input type="button" className='botonContactos'   onClick={handleClickBuyButton} value="Comprar"/>
+            <h3 className='titilox2'> Total a Pagar : {totalPrice() * 1000}</h3>
+            
                             </div>
-                                <h2 className="titulo-formulario letraTitulo1">Registrar Usuario</h2>
+                                <h4 className="titulo-formulario letraTitulo1">Datos de Usuario</h4>
                                 <form  className="formulario">
                                     <div className="formulario_input">
                                         <label  for="Campo_Nombre"><b>Ingrese Nombre</b></label>
-                                        <input type="text" id="Campo_Nombre" placeholder ='Ej: Pedro' required  value={name} onChange= {(e) => setName(e.target.value)} /> {/* Con el onChange seteamos el estado con el valor del input que se ingre */}
+                                        <input type="text" id="Campo_Nombre" placeholder ='Ej: Pedro' required  value={name} onChange= {(e) => setName(e.target.value)} /> {/* Con el onChange seteamos el estado con el valor del input que se ingrese, si cambia el valor de la caja cambia el valor del estado seteandolo con ese valor nuevo, */}
                                     </div> 
                                     <div className="formulario_input">
                                         <label for="Campo_Apellido"><b>Ingrese su Apellido</b></label>
@@ -62,21 +67,9 @@ function handleClickBuyButton() {
                                     <div className="formulario_input">
                                         <label for="Campo_Celular"><b>Ingrese Su Celular</b></label>
                                         <input type="text" id="Campo_Celular" placeholder="Ingrese su Número de Teléfono" value={tel} onChange= {(e) => setTel(e.target.value)} />
-                                    </div>
-                                    <div className="formulario_input">
-                                        <label for="Campo_Fecha_Nacimiento"><b>Ingrese su Fecha de Nacimiento</b></label>
-                                        <input type="date" id="Campo_Fecha_Nacimiento" value={date} onChange= {(e) => setDate(e.target.value)} />
-                                    </div>  
-                                    <div className="formulario_input">
-                                        <p>Lea los terminos y condiciones y haga clic para aceptar</p>
-                                        <label for="Campo_Aceptar"><b>Acepto los Términos y Condiciones</b></label>
-                                        <input type="checkbox" id="Campo_Aceptar"  required  value={"1"} />
-                                    </div>
-                                    <div className="formulario_input_buttons">
-                                        <input type="submit" className="botonContactos" />
-                                        <input type="reset" className="botonContactos" />
                                     </div>                   
-                                </form>                      
+                                </form>
+                                <div className='text-center'><input type="button" className='botonContactos'   onClick={handleClickBuyButton} value="Comprar"/></div>
                             </div>
   );
 }

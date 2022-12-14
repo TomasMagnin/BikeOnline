@@ -48,7 +48,7 @@ export default function CartProvider({children}) {
 
 
     useEffect(() => {
-        /* localStorage.setItem("cart", JSON.stringify(cart)); */              // MOstramos en pantalla el contenido del carrito, solo para verificar que ande.    
+        /* localStorage.setItem("cart", JSON.stringify(cart)); */              // Mostramos en pantalla el contenido del carrito, solo para verificar que ande.    
 
     }, [cart])                                                          // Cualquier cabio en el carro ejecutamos este use efect y guardamos los cambios en el localStorage
     
